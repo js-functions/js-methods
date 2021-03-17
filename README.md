@@ -67,6 +67,24 @@
       console.log(get(object, 'a[0].b.c')) // 3
       ```
     -
+    ### 2. Set
+
+    Lodash document reference [link.](https://lodash.com/docs/4.17.15#set)
+
+    Set the value at the path of object. If a portion of path doesn't exist, it's created.
+
+    #### Arguments
+    (Object): The object to query. 
+    (Path): The string to set value. 
+    value: The value to set 
+    #### Returns
+    (*): Return object
+
+    #### Example
+    ```javascript
+    var object = { 'a': [{ 'b': { 'c': 3 } }] };
+    console.log(set(object, 'a[0].b.d'), 5) // { 'a': [{ 'b': { 'c': 3, d: 5 } }] }
+      ```
     -
     -
     -
