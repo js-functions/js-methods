@@ -7,7 +7,6 @@ describe('Get Method', function () {
       var object = ''
       var getValue = function () { return jm.object.get(object, 'a[0].b.c') }
       expect(getValue).to.throw(TypeError);
-
     })
     it('Test if second parameter id not string', function () {
       var object = { a: [{ b: { c: 3 } }] }
@@ -21,7 +20,6 @@ describe('Get Method', function () {
       var object = { a: 3, b: 4, c: 6 }
       var getValue = jm.object.get(object, 'a')
       expect(getValue).to.equal(3)
-
     })
     it('Test with nested object access', function () {
       var object = { a: { b: 4, c: 6 } }
@@ -39,5 +37,4 @@ describe('Get Method', function () {
       expect(getValue).to.equal(10)
     })
   })
-
 })

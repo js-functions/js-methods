@@ -1,4 +1,5 @@
 /**
+ * Gets the value at `path` of `object`.
  * 1. Replace [] with .
  * 2. Split .
  * 3. Remove double .'s or blank string
