@@ -43,8 +43,61 @@
       var allSeasonFruits = uniq(fruits)
       console.log(allSeasonFruits) // ['apple', 'mango', 'oranges]
       ```
+     - 
+      ### 3. Flatten
+
+      Lodash document reference [link.](https://lodash.com/docs/4.17.15#flatten)
+
+      Flattens array a single level deep.
+
+      #### Arguments
+      (Array): The array to flatten.
+
+      #### Returns
+      (Array): Returns the new flattened array.
+
+      #### Example
+      ```javascript
+      var array = [1, [2, [3, [4]], 5]]
+      var flattenedArray = flatten(array)
+      console.log(flattenedArray) // [1, 2, [3, [4]], 5]
+      ```
     -
+      ### 4. Intersection
+
+      Lodash document reference [link.](https://lodash.com/docs/4.17.15#intersection)
+
+      Creates an array of unique values that are included in all given arrays using [SameValueZero](https://262.ecma-international.org/7.0/#sec-samevaluezero) for equality comparisons. The order and references of result values are determined by the first array.
+
+      #### Arguments
+      (...Array): The arrays to inspect.
+
+      #### Returns
+      (Array): Returns the new array of intersecting values.
+
+      #### Example
+      ```javascript
+      var intersectingArray = intersection([2, 1], [2, 3])
+      console.log(intersectingArray) // [2]
+      ```
     -
+     ### 5. Union
+
+      Lodash document reference [link.](https://lodash.com/docs/#union)
+
+      Creates an array of unique values, in order, from all given arrays using [SameValueZero](https://262.ecma-international.org/7.0/#sec-samevaluezero) for equality comparisons.
+
+      #### Arguments
+      (...Array): The arrays to inspect.
+
+      #### Returns
+      (Array): Returns the new array of combined values.
+
+      #### Example
+      ```javascript
+      var unionArray = _.union([2], [1, 2]);
+      console.log(unionArray) // [2, 1]
+      ```
     -
   - Object
     -
