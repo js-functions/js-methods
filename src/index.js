@@ -1,5 +1,7 @@
 var object = require('./object')
+var array = require('./array')
 
 module.exports = {
-  object
+  object,
+  array
 }
