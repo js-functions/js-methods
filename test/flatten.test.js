@@ -1,7 +1,7 @@
 let expect = require('chai').expect
 var jm = require('../src')
 
-describe('Array methods', () => {
+describe('Flatten methid', () => {
   it('it should return flatten array single level deep ', () => {
     const array = [1, [2, [3, [4]], 5]]
     const mockArray = [1, 2, [3, [4]], 5]    
