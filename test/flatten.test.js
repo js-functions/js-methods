@@ -8,7 +8,7 @@ describe('Flatten method', () => {
   })
 
   it('it should throw error if parameter is not array', () => {
-    const flattenedArray = function () { jm.array.flatten({a:1}) }
+    const flattenedArray = function () { jm.array.flatten({ a: 1 }) }
     expect(flattenedArray).to.throw(TypeError, 'parameter should be of Array type')
   })
   
