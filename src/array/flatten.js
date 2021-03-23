@@ -4,8 +4,8 @@
  * @returns {Array} Returns new flattened single level deep array
  */
 function flatten(array) {
-  if (typeof array !== 'object'){ 
-    throw new TypeError('parameter should be of object type') 
+  if (!Array.isArray(array)){ 
+    throw new TypeError('parameter should be of Array type') 
   }
  
   let flattenedArray = []
