@@ -43,7 +43,7 @@
       var allSeasonFruits = uniq(fruits)
       console.log(allSeasonFruits) // ['apple', 'mango', 'oranges]
       ```
-     - 
+    -
       ### 3. Flatten
 
       Lodash document reference [link.](https://lodash.com/docs/4.17.15#flatten)
@@ -61,6 +61,25 @@
       var array = [1, [2, [3, [4]], 5]]
       var flattenedArray = flatten(array)
       console.log(flattenedArray) // [1, 2, [3, [4]], 5]
+      ```
+    -
+      ### 3.1 Flatten Deep
+
+      Lodash document reference [link.](https://lodash.com/docs/4.17.15#flattenDeep)
+
+      Recursively flattens array.
+
+      #### Arguments
+      (Array): The array to flatten.
+
+      #### Returns
+      (Array): Returns the new flattened array.
+
+      #### Example
+      ```javascript
+      var array = [1, [2, [3, [4]], 5]]
+      var flattenedArray = flattenDeep(array)
+      console.log(flattenedArray) // [1, 2, 3, 4, 5]
       ```
     -
       ### 4. Intersection
