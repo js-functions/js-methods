@@ -22,5 +22,12 @@ describe('Flatten method', () => {
       const flattenedArray = jm.array.flattenDeep(array)
       expect(JSON.stringify(flattenedArray)).to.equal(JSON.stringify(mockArray))
     })
-  })  
+
+    it('it should return flatten array for a array which contains string, object as array elements', () => {
+      const array = [1, ['string', [3, [{'a':1}]], 5]]
+      const mockArray = [1,'string',3,{'a':1},5] 
+      const flattenedArray = jm.array.flattenDeep(array)
+      expect(JSON.stringify(flattenedArray)).to.equal(JSON.stringify(mockArray))
+    })
+  }) 
 })
