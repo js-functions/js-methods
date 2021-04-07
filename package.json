@@ -4,7 +4,8 @@
   "description": "JavaScript library for common utility functions for Arrays, Objects and Functions",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "nyc --reporter=text --reporter=lcov mocha"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   "devDependencies": {
     "chai": "^4.3.3",
     "editorconfig": "^0.15.3",
-    "mocha": "^8.3.1"
-  }
+    "mocha": "^8.3.1",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {}
 }
