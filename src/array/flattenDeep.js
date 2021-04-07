@@ -14,15 +14,14 @@ function flattenDeep(array) {
     let i = 0
     while(i < array.length){
       let item = array[i]
-      // check if item is array using array length property
-      // if undefined, means it is not an array then push into flattenedArray
-      if (item.length === undefined) {
-        flattenedArray.push(item)
-      } else {
-        // if array length is not undefined (actual length) means it is a array
-        // then recursively call itself 
+      // check if array element is array or not
+      // if array then recursively call itself 
+      if (Array.isArray(item)){
         recursiveFunction(item)
-      }
+      } 
+      else if (!Array.isArray(item)) {         
+        flattenedArray.push(item)
+      } 
       i++
     }    
   }
